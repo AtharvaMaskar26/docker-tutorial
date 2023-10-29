@@ -1,0 +1,51 @@
+# Why Docker?
+- Inititlaly one application on one server 
+- To scale your application you would have to buy a new server box 
+- Virtual Machines Solved the problems 
+- Virtual Machines allowed multiple applications per server. But VMs required their own dedicated CPUs and memory. 
+- While this was much better than one server per application there was still some room for improvement.
+
+Problems with VMs. 
+- Works on my machine but not on yours 
+
+Wouldn't it be cool to run 
+
+#Containers 
+What you do is like a container pack all your project requirements in a container and send it to anyone you want. He can now run the code without facing any issues. 
+
+# Running Docker on Windows 
+Windows requires Docker Desktop, docker running on windows host will not run on linux and vice versa
+
+# What is Docker?
+It is a container platform that allows you to build, test and deploy applications quickly. A developer defines all the applications and it's dependencies in a docker file which is then used to build docker images that defines a Docker container. Doing this ensures that your application will run in any environment. 
+
+Runtime - Allows us to start and stop containers 
+    - runc - works with OS to start and stop 
+    - containerd - Managing runc & managing container related to networking and pulling images 
+
+Engine - Used to interact with the docker, daemon
+    
+Orchestration - Allows us to manage containers
+
+Docker Image - To allow someone to run my app I can just send an image of my app which he can run easily. 
+Dockerfile is a set of instructions followed to run the app. 
+While Image is the output formed by following the set of instructions from the dockerfile. 
+Image is formed from the dockerfile.  
+
+Open Container initative (OCI)
+
+By default images of most popular programs like ubuntu are available online in places like dockerHub similar to github. 
+For example if you want to run ubuntu you can run it's image available online. 
+Eg: docker run -it ubuntu
+You can run ubuntu in few seconds 
+
+docker ps : Shows all the files running 
+Here it will show the id of the instances running 
+
+docker pull idname
+
+docker stop idname 
+
+docker images 
+
+Creating a docker image 
